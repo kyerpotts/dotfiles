@@ -1,0 +1,15 @@
+2021/03/21-11:17:51.720 1f444 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lenovo.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/21-11:17:51.720 1f444 Recovering log #33
+2021/03/21-11:17:51.720 1f444 Reusing old log /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lenovo.com_0.indexeddb.leveldb/000033.log 
+2021/03/21-11:18:42.149 2005a Level-0 table #38: started
+2021/03/21-11:18:42.154 2005a Level-0 table #38: 1117 bytes OK
+2021/03/21-11:18:42.164 2005a Delete type=0 #33
+2021/03/21-11:18:42.164 2005a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/21-11:18:42.164 2005a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 146 : 1
+2021/03/21-11:18:42.165 2005a Compacting 1@1 + 1@2 files
+2021/03/21-11:18:42.169 2005a Generated table #39@1: 20 keys, 1168 bytes
+2021/03/21-11:18:42.170 2005a Compacted 1@1 + 1@2 files => 1168 bytes
+2021/03/21-11:18:42.178 2005a compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/21-11:18:42.179 2005a Delete type=2 #35
+2021/03/21-11:18:42.179 2005a Delete type=2 #38
+2021/03/21-11:18:42.179 2005a Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 146 : 1 .. (end); will stop at (end)

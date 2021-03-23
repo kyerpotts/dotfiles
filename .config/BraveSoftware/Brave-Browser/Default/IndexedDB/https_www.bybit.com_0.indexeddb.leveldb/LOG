@@ -1,0 +1,5 @@
+2021/03/20-13:51:31.667 3128 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.bybit.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/20-13:51:37.009 1128e Level-0 table #5: started
+2021/03/20-13:51:37.014 1128e Level-0 table #5: 4171 bytes OK
+2021/03/20-13:51:37.021 1128e Delete type=0 #3
+2021/03/20-13:51:37.021 1128e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

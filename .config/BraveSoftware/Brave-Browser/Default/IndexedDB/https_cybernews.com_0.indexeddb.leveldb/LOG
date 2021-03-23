@@ -1,0 +1,6 @@
+2021/03/19-04:39:25.215 7e309 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_cybernews.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/19-04:39:29.389 7d371 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/03/19-04:39:31.392 7e308 Level-0 table #5: started
+2021/03/19-04:39:31.398 7e308 Level-0 table #5: 587 bytes OK
+2021/03/19-04:39:31.408 7e308 Delete type=0 #3
+2021/03/19-04:39:31.408 7e308 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

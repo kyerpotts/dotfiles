@@ -1,0 +1,15 @@
+2021/03/21-10:25:06.933 67bf Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/21-10:25:06.933 67bf Recovering log #49
+2021/03/21-10:25:06.933 67bf Reusing old log /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000049.log 
+2021/03/21-10:25:50.298 7edd Level-0 table #54: started
+2021/03/21-10:25:50.302 7edd Level-0 table #54: 191686 bytes OK
+2021/03/21-10:25:50.305 7edd Delete type=0 #49
+2021/03/21-10:25:50.305 7edd Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/21-10:25:50.305 7edd Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 46962 : 1
+2021/03/21-10:25:50.305 7edd Compacting 1@1 + 1@2 files
+2021/03/21-10:25:50.307 7edd Generated table #55@1: 172 keys, 17959 bytes
+2021/03/21-10:25:50.307 7edd Compacted 1@1 + 1@2 files => 17959 bytes
+2021/03/21-10:25:50.309 7edd compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/21-10:25:50.309 7edd Delete type=2 #51
+2021/03/21-10:25:50.309 7edd Delete type=2 #54
+2021/03/21-10:25:50.309 7edd Manual compaction at level-1 from '\x00\x04\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 46962 : 1 .. (end); will stop at (end)

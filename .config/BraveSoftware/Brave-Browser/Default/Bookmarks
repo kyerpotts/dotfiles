@@ -1,0 +1,83 @@
+{
+   "checksum": "10c79d38c45d61b1476002a1fb066e05",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13260181584542414",
+            "guid": "9248b22b-e9f4-4dc1-9184-47bb6c5bddc4",
+            "id": "5",
+            "name": "OASIS",
+            "type": "url",
+            "url": "https://oasis.curtin.edu.au/Auth/LogOn?ReturnUrl=%2f"
+         }, {
+            "date_added": "13260570755890967",
+            "guid": "def28e8d-b253-4aec-a922-0cf27f6e2dc9",
+            "id": "11",
+            "name": "https://jhelvy.shinyapps.io/splitkbcompare/",
+            "type": "url",
+            "url": "https://jhelvy.shinyapps.io/splitkbcompare/"
+         }, {
+            "date_added": "13260574137810769",
+            "guid": "3a8499eb-30dc-4cf9-8a71-ae17dcf785a5",
+            "id": "12",
+            "name": "ErgoMechBoards",
+            "type": "url",
+            "url": "https://www.reddit.com/r/ErgoMechKeyboards/"
+         }, {
+            "date_added": "13260648514946199",
+            "guid": "f1bffabe-d098-4aee-a9a2-2a8a267a93be",
+            "id": "14",
+            "name": "The musings of bluz71",
+            "type": "url",
+            "url": "https://bluz71.github.io/2019/10/16/lsp-in-vim-with-the-lsc-plugin.html"
+         } ],
+         "date_added": "13260178012069336",
+         "date_modified": "13260648514946199",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13260181930105881",
+               "guid": "65c217f0-7583-4898-b954-5af1e2d04be9",
+               "id": "7",
+               "name": "Leaders / Learn Vimscript the Hard Way",
+               "type": "url",
+               "url": "https://learnvimscriptthehardway.stevelosh.com/chapters/06.html"
+            }, {
+               "date_added": "13260181950484442",
+               "guid": "cef4d505-63b2-4c25-8851-d91f96e9ee29",
+               "id": "9",
+               "name": "Intro to Nvim File Explorer Plugin Nerdtree - jdhao's blog",
+               "type": "url",
+               "url": "https://jdhao.github.io/2018/09/10/nerdtree_usage/"
+            } ],
+            "date_added": "13260181941418991",
+            "date_modified": "13260570755890967",
+            "guid": "d9cd1d25-2500-497d-9099-60d261935083",
+            "id": "8",
+            "name": "Helpful Vim",
+            "type": "folder"
+         } ],
+         "date_added": "13260178012069337",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13260178012069339",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

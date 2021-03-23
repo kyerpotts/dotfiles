@@ -1,0 +1,5 @@
+2021/03/15-19:56:22.398 afb2 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_hackernoon.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/15-19:56:56.104 e84 Level-0 table #5: started
+2021/03/15-19:56:56.109 e84 Level-0 table #5: 1115 bytes OK
+2021/03/15-19:56:56.119 e84 Delete type=0 #3
+2021/03/15-19:56:56.119 e84 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

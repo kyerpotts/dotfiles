@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/puckfig/.config/coc/extensions/coc-java-data/jdt_ws_6723010f0de6addeacabc50b2d3925e5/.metadata/.plugins/org.eclipse.jdt.core
+3842426239.index

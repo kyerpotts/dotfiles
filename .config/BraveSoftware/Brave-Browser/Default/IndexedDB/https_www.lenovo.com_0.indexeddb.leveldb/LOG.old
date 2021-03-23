@@ -1,0 +1,15 @@
+2021/03/16-13:05:23.162 57f68 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lenovo.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/16-13:05:23.162 57f68 Recovering log #30
+2021/03/16-13:05:23.162 57f68 Reusing old log /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lenovo.com_0.indexeddb.leveldb/000030.log 
+2021/03/16-13:06:05.219 5651f Level-0 table #34: started
+2021/03/16-13:06:05.223 5651f Level-0 table #34: 1098 bytes OK
+2021/03/16-13:06:05.229 5651f Delete type=0 #30
+2021/03/16-13:06:05.230 5651f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/03/16-13:06:05.230 5651f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 134 : 1
+2021/03/16-13:06:05.230 5651f Compacting 1@1 + 1@2 files
+2021/03/16-13:06:05.233 5651f Generated table #35@1: 20 keys, 1168 bytes
+2021/03/16-13:06:05.233 5651f Compacted 1@1 + 1@2 files => 1168 bytes
+2021/03/16-13:06:05.239 5651f compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/16-13:06:05.239 5651f Delete type=2 #25
+2021/03/16-13:06:05.239 5651f Delete type=2 #34
+2021/03/16-13:06:05.240 5651f Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 134 : 1 .. (end); will stop at (end)

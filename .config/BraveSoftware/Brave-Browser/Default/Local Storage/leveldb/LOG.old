@@ -1,0 +1,9 @@
+2021/03/21-15:08:20.590 3 Reusing MANIFEST /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/03/21-15:08:20.594 3 Recovering log #220
+2021/03/21-15:08:20.596 3 Reusing old log /home/puckfig/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000220.log 
+2021/03/21-16:48:42.054 19 Level-0 table #226: started
+2021/03/21-16:48:42.071 19 Level-0 table #226: 474472 bytes OK
+2021/03/21-16:48:42.087 19 Delete type=0 #220
+2021/03/21-16:58:24.811 1e Level-0 table #228: started
+2021/03/21-16:58:24.826 1e Level-0 table #228: 471180 bytes OK
+2021/03/21-16:58:24.840 1e Delete type=0 #225
