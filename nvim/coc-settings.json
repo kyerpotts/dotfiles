@@ -1,3 +1,23 @@
 {
-    "diagnostic.dispayByAle": true
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "javascript",
+        "graphql",
+        "html",
+        "yaml",
+        "json",
+        "python",
+        "java"
+    ],
+    // python config
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    // diagnostics
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": " "
+    // "diagnostic.displayByAle": true
+    // "diagnostic.virtualText": true
 }

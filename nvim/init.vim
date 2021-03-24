@@ -1,6 +1,6 @@
 let g:ale_disable_lsp = 1
 source $HOME/.config/nvim/vim-plug/plugins.vim
-
+source $HOME/.config/nvim/plug-config/coc.vim
 syntax on
 set guicursor=
 set nohlsearch
@@ -23,7 +23,6 @@ set softtabstop=4
 set shiftwidth=4
 set mouse=a
 set title
-set signcolumn=yes
 set colorcolumn=80
 let mapleader = " "
 
@@ -70,8 +69,8 @@ let g:airline_symbols.maxlinenr = ' '
 let g:airline_symbols.dirty='⚡'
 let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#ale#enabled = 1
-
+let g:airline#extensions#ale#enabled = 0
+" let g:airline#extensions#coc#enabled = 0
 " ALE Settings
 "
 "" Shorten error/warning flags
