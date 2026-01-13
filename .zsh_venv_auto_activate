@@ -1,0 +1,47 @@
+# Auto-activate Python virtual environments
+# This script automatically activates/deactivates venvs when entering/leaving project directories
+
+_venv_auto_activate() {
+    # Check if we're in a Python project with a venv
+    local venv_dir=""
+
+    # Look for .venv in current directory or parent directories
+    local current_dir="$PWD"
+    while [[ "$current_dir" != "/" ]]; do
+        if [[ -f "$current_dir/.venv/bin/activate" ]]; then
+            venv_dir="$current_dir/.venv"
+            break
+        elif [[ -f "$current_dir/venv/bin/activate" ]]; then
+            venv_dir="$current_dir/venv"
+            break
+        fi
+        current_dir="$(dirname "$current_dir")"
+    done
+
+    # If we found a venv and it's not the currently active one
+    if [[ -n "$venv_dir" ]]; then
+        if [[ "$VIRTUAL_ENV" != "$venv_dir" ]]; then
+            # Deactivate current venv if any
+            if [[ -n "$VIRTUAL_ENV" ]]; then
+                deactivate 2>/dev/null || true
+            fi
+
+            # Activate the new venv
+            source "$venv_dir/bin/activate"
+            echo "🐍 Activated venv: $venv_dir"
+        fi
+    else
+        # No venv found, deactivate if one is active
+        if [[ -n "$VIRTUAL_ENV" ]]; then
+            deactivate 2>/dev/null || true
+            echo "🐍 Deactivated venv"
+        fi
+    fi
+}
+
+# Run on directory change
+autoload -U add-zsh-hook
+add-zsh-hook chpwd _venv_auto_activate
+
+# Run on shell start
+_venv_auto_activate

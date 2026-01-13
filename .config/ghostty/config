@@ -1,0 +1,55 @@
+# Ghostty Configuration
+
+# Font configuration
+font-family = monospace
+font-size = 10
+
+# Window settings
+window-padding-x = 4
+window-padding-y = 4
+window-decoration = server
+
+# Background opacity
+background-opacity = 1
+
+# Cursor
+cursor-style = underline
+cursor-style-blink = false
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+
+# Scrollback
+scrollback-limit = 10000
+
+# Shell integration
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Ayu Dark color scheme
+background = 0a0e14
+foreground = b3b1ad
+
+# Normal colors
+palette = 0=#01060e
+palette = 1=#ea6c73
+palette = 2=#91b362
+palette = 3=#f9af4f
+palette = 4=#53bdfa
+palette = 5=#fae994
+palette = 6=#90e1c6
+palette = 7=#c7c7c7
+
+# Bright colors
+palette = 8=#686868
+palette = 9=#f07178
+palette = 10=#c2d94c
+palette = 11=#ffb454
+palette = 12=#59c2ff
+palette = 13=#ffee99
+palette = 14=#95e6cb
+palette = 15=#ffffff

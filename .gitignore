@@ -1,0 +1,20 @@
+# Backup directories
+backup-*/
+*.backup-*
+
+# Sensitive files (add patterns for any files with secrets)
+.config/gh/hosts.yml
+.ssh/
+*.key
+*.pem
+
+# Cache and temporary files
+.cache/
+*.log
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

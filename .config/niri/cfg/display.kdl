@@ -1,0 +1,23 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// You will have to remove "/-" and edit it before it takes effect.
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+output "HDMI-A-2" {
+    mode "1920x1080@75" // Set resolution and refresh rate
+    position x=1080 y=290
+    scale 1 // No scaling (use 2 for HiDPI)
+}
+
+output "DP-1" {
+    mode "1920x1080@60" // Set resolution and refresh rate
+    transform "270"
+    position x=0 y=0
+    scale 1 // No scaling (use 2 for HiDPI)
+    layout {
+	    default-column-width { proportion 1.0; }
+	    preset-column-widths {
+		    proportion 1.0;
+	    }
+    }
+}

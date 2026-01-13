@@ -1,0 +1,27 @@
+layout {
+  gaps 8 // Gap between windows
+  center-focused-column "never" // Don’t auto-center focused column
+
+  background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+
+	focus-ring {
+	    off
+	}
+
+	border {
+	    on
+	    width 2
+	    active-color "#39bae6"  // Ayu cyan - less intense than yellow
+	    inactive-color "#0B0E14"  // Ayu background
+	}
+  shadow {
+    off
+  }
+
+  preset-column-widths {
+    proportion 0.5
+    proportion 0.66667
+    proportion 1.0
+  }
+  struts {}
+}
