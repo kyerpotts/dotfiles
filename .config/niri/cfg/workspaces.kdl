@@ -1,0 +1,23 @@
+// ────────────── Named Workspaces ──────────────
+// Named workspaces are persistent and always exist
+// https://variety4me.github.io/niri_docs/Configuration-Named-Workspaces/
+
+workspace "󰚩" {
+  open-on-output "HDMI-A-2"
+}
+
+workspace "" {
+  open-on-output "HDMI-A-2"
+}
+
+workspace "" {
+  open-on-output "HDMI-A-2"
+}
+
+workspace ""{
+  open-on-output "HDMI-A-2"
+}
+
+workspace "󰭻"{
+  open-on-output "HDMI-A-2"
+}

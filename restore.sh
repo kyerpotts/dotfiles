@@ -17,6 +17,8 @@ DOTFILES=(
     ".config/tmux"
     ".tmux.conf"
     ".config/niri"
+    ".config/noctalia"
+    ".config/obsidian"
     ".gitconfig"
 )
 

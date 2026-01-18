@@ -3,3 +3,20 @@
 
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
     spawn-sh-at-startup "qs -c noctalia-shell"
+
+    // ────────────── Default Workspace Apps ──────────────
+
+    // Workspace 1: Browser (Left monitor DP-1)
+    spawn-sh-at-startup "sleep 2 && zen-browser"
+
+    // Workspace 1: Terminal with tmux (Right monitor HDMI-A-2)
+    spawn-sh-at-startup "sleep 2 && ghostty --title=tmux -e tmux"
+
+    // Workspace 3: YouTube Music
+    spawn-sh-at-startup "sleep 3 && youtube-music"
+
+    // Workspace 4: Obsidian
+    spawn-sh-at-startup "sleep 4 && obsidian"
+
+    // Workspace 5: Discordo
+    spawn-sh-at-startup "sleep 5 && ghostty --title=discordo -e discordo"
