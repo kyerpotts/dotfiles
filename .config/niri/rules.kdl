@@ -1,0 +1,43 @@
+    window-rule {
+        geometry-corner-radius 5
+        clip-to-geometry true
+    }
+
+    // ────────────── Workspace & Monitor Assignments ──────────────
+
+    // YouTube Music on music workspace
+    window-rule {
+        match app-id="com.github.th_ch.youtube_music"
+        open-on-workspace "music"
+        open-on-output "HDMI-A-2"
+    }
+
+    // Zen Browser on main workspace, Left Monitor (DP-1)
+    window-rule {
+        match at-startup=true app-id="zen"
+        open-on-output "DP-1"
+    }
+
+    // Terminal with tmux on main workspace, Right Monitor (HDMI-A-2), 2/3 width
+    window-rule {
+        match app-id="com.mitchellh.ghostty" title="tmux" at-startup=true
+        open-on-workspace "tmux"
+        open-on-output "HDMI-A-2"
+        default-column-width { proportion 0.66667; }
+    }
+
+    // Obsidian on notes workspace, 2/3 width
+    window-rule {
+        match app-id="obsidian"
+        open-on-workspace "notes"
+        default-column-width { proportion 1.0; }
+        open-on-output "HDMI-A-2"
+    }
+
+    // Discordo on chat workspace
+    window-rule {
+        match app-id="com.mitchellh.ghostty" title="discordo"
+        open-on-workspace "chat"
+        open-on-output "HDMI-A-2"
+    }
+
