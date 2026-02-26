@@ -20,6 +20,6 @@ backup-*/
 Thumbs.db
 
 # Obsidian files
-.config/obsidian/
+.config/obsidian/*
 !.config/obsidian/user-flags.conf
 
