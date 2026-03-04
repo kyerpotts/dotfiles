@@ -16,6 +16,7 @@
     window-rule {
         match at-startup=true app-id="zen"
         open-on-output "DP-1"
+        default-column-width { proportion 1.0; }
     }
 
     // Terminal with tmux on main workspace, Right Monitor (HDMI-A-2), 2/3 width

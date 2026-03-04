@@ -16,6 +16,7 @@
     window-rule {
         match at-startup=true app-id="zen"
         open-on-output "DP-1"
+        default-column-width { proportion 1.0; }
     }
 
     // Terminal with tmux on main workspace, Right Monitor (HDMI-A-2), 2/3 width
@@ -30,13 +31,21 @@
     window-rule {
         match app-id="obsidian"
         open-on-workspace "notes"
-        default-column-width { proportion 1.0; }
+        default-column-width { proportion 0.5; }
+        open-on-output "HDMI-A-2"
+    }
+
+    // Ghostty terminal launched from Obsidian (Neovim)
+    window-rule {
+        match at-startup=true app-id="com.mitchellh.ghostty" title="Ghostty"
+        open-on-workspace "notes"
+        default-column-width { proportion 0.5; }
         open-on-output "HDMI-A-2"
     }
 
     // Discordo on chat workspace
     window-rule {
-        match app-id="com.mitchellh.ghostty" title="discordo"
+        match app-id="vesktop"
         open-on-workspace "chat"
         open-on-output "HDMI-A-2"
     }
