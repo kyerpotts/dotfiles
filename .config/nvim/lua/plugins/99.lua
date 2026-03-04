@@ -1,7 +1,76 @@
 return {
   {
-    "dancorreia-swe/99",
-    branch = "feat/blink-completion",
+    "kyerpotts/99",
+    branch = "feat/add_snacks_support",
+    dependencies = {
+      "saghen/blink.compat",
+    },
+    keys = {
+      {
+        "<leader>as",
+        function()
+          require("99").search()
+        end,
+        desc = "99 Search",
+      },
+      {
+        "<leader>av",
+        function()
+          require("99").vibe()
+        end,
+        desc = "99 Vibe",
+      },
+      {
+        "<leader>ao",
+        function()
+          require("99").open()
+        end,
+        desc = "99 Open",
+      },
+      {
+        "<leader>ax",
+        function()
+          require("99").stop_all_requests()
+        end,
+        desc = "99 Stop Requests",
+      },
+      {
+        "<leader>ac",
+        function()
+          require("99").clear_previous_requests()
+        end,
+        desc = "99 Clear Requests",
+      },
+      {
+        "<leader>al",
+        function()
+          require("99").view_logs()
+        end,
+        desc = "99 View Logs",
+      },
+      {
+        "<leader>am",
+        function()
+          require("99.extensions.snacks").select_model()
+        end,
+        desc = "99 Select Model",
+      },
+      {
+        "<leader>ap",
+        function()
+          require("99.extensions.snacks").select_provider()
+        end,
+        desc = "99 Select Provider",
+      },
+      {
+        "<leader>ae",
+        function()
+          require("99").visual()
+        end,
+        mode = "v",
+        desc = "99 Visual Edit",
+      },
+    },
     config = function()
       local _99 = require("99")
 
@@ -11,13 +80,14 @@ return {
       local cwd = vim.uv.cwd()
       local basename = vim.fs.basename(cwd)
       _99.setup({
-        -- provider = _99.ClaudeCodeProvider,  -- default: OpenCodeProvider
-        model = "google/antigravity-claude-sonnet-4-5",
+        provider = _99.Providers.OpenCodeProvider,
+        model = "openai/gpt-5.3-codex",
         logger = {
           level = _99.DEBUG,
           path = "/tmp/" .. basename .. ".99.debug",
           print_on_error = true,
         },
+        tmp_dir = "./tmp",
 
         --- Completions: #rules and @files in the prompt buffer
         completion = {
@@ -69,36 +139,6 @@ return {
           "AGENT.md",
         },
       })
-      -- take extra note that i have visual selection only in v mode
-      -- technically whatever your last visual selection is, will be used
-      -- so i have this set to visual mode so i dont screw up and use an
-      -- old visual selection
-      --
-      -- likely ill add a mode check and assert on required visual mode
-      -- so just prepare for it now
-      vim.keymap.set("v", "<leader>9v", function()
-        _99.visual()
-      end)
-
-      --- if you have a request you dont want to make any changes, just cancel it
-      vim.keymap.set("v", "<leader>9s", function()
-        _99.stop_all_requests()
-      end)
-    end,
-  },
-  -- Extend blink.cmp to add 99 as a source
-  {
-    "saghen/blink.cmp",
-    opts = function(_, opts)
-      opts.sources = opts.sources or {}
-      opts.sources.default = opts.sources.default or {}
-      opts.sources.providers = opts.sources.providers or {}
-      table.insert(opts.sources.default, "99")
-      opts.sources.providers["99"] = {
-        module = "99.extensions.completions.blink",
-        name = "99",
-      }
-      return opts
     end,
   },
 }
