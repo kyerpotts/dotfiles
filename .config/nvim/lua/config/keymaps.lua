@@ -94,3 +94,6 @@ if pok then
     },
   }))
 end
+
+vim.keymap.set("i", "<M-BS>", "<C-w>", { desc = "Delete word backward" })
+vim.keymap.set("c", "<M-BS>", "<C-w>", { desc = "Delete word backward" })
