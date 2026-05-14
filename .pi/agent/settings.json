@@ -1,0 +1,23 @@
+{
+  "lastChangelogVersion": "0.74.0",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.5",
+  "defaultThinkingLevel": "medium",
+  "enabledModels": [
+    "openai-codex/gpt-5.4",
+    "openai-codex/gpt-5.4-mini",
+    "openai-codex/gpt-5.3-codex",
+    "openai-codex/gpt-5.5"
+  ],
+  "hideThinkingBlock": true,
+  "packages": [
+    "git:git@github.com:kyerpotts/pi-default-setup",
+    "npm:pi-bash-live-view",
+    "npm:pi-web-access",
+    "git:git@github.com:kyerpotts/pi-diff",
+    "git:git@github.com:kyerpotts/skills"
+  ],
+  "theme": "dark",
+  "enableInstallTelemetry": false,
+  "enableSkillCommands": true
+}
