@@ -13,7 +13,8 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="zen-browser"
-export PATH="$HOME/.local/bin:$HOME/Scripts:$PATH"
+export GOBIN="$HOME/.local/bin"
+export PATH="$GOBIN:$HOME/Scripts:$PATH"
 
 # opencode
 export PATH=/home/squidmilk/.opencode/bin:$PATH
