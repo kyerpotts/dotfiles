@@ -32,6 +32,8 @@ return {
         fg = "#8fe0fa",
       })
       vim.api.nvim_set_hl(0, "LineNr", { fg = "#5c6370" })
+      vim.api.nvim_set_hl(0, "CursorLine", {})
+      vim.api.nvim_set_hl(0, "CursorColumn", {})
       vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#567e96", bold = true })
 
       vim.api.nvim_set_hl(0, "Statement", {
@@ -70,7 +72,7 @@ return {
       vim.api.nvim_set_hl(0, "@punctuation.delimiter", { link = "Delimiter" })
 
       vim.api.nvim_set_hl(0, "Comment", {
-        fg = "#5c6370",
+        fg = "#8e969a",
         italic = true,
       })
 
