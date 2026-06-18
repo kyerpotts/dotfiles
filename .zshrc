@@ -16,8 +16,12 @@ export BROWSER="zen-browser"
 export GOBIN="$HOME/.local/bin"
 export PATH="$GOBIN:$HOME/Scripts:$PATH"
 
+
 # opencode
 export PATH=/home/squidmilk/.opencode/bin:$PATH
+
+# bun
+export PATH="/home/squidmilk/.bun/bin:$PATH"
 
 # Auto-activate Python virtual environments
 source ~/.zsh_venv_auto_activate
@@ -52,9 +56,3 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
-# fnm
-FNM_PATH="/home/squidmilk/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
-fi
