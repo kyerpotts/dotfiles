@@ -15,7 +15,17 @@ Personal configuration files for my CachyOS + Niri + Noctalia setup.
    ./restore.sh
    ```
 
-3. Log out and log back in for shell changes to take effect.
+   To preview without changing files:
+   ```bash
+   ./restore.sh --dry-run --no-shell
+   ```
+
+   To deploy without changing your login shell:
+   ```bash
+   ./restore.sh --no-shell
+   ```
+
+3. Log out and log back in if the script changes your default shell.
 
 ## What's Included
 
