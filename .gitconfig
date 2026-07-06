@@ -1,6 +1,13 @@
 [user]
 	name = Kyer Potts
-	email = kyerpotts@gmail.com
+	email = kyerpotts@squidlabs.dev
+
+[includIf "gitdir:~/Work/squidlabs/"]
+  path = ~/.dotfiles/.gitconfig-squidlabs
+
+[includIf "gitdir:~/Work/personal/"]
+  path = ~/.dotfiles/.gitconfig-personal
+
 [core]
 	editor = nvim
 [init]
