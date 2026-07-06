@@ -23,3 +23,6 @@ Thumbs.db
 .config/obsidian/*
 !.config/obsidian/user-flags.conf
 
+
+# Local git worktrees
+.worktrees/
