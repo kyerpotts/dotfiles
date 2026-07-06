@@ -33,6 +33,7 @@ Personal configuration files for my CachyOS + Niri + Noctalia setup.
 - `.config/ghostty/` - Ghostty terminal configuration
 - `.config/nvim/` - Neovim configuration (omarchynvim)
 - `.config/tmux/` - Tmux configuration
+- `.config/herdr/config.toml` - Herdr terminal workspace configuration
 - `.config/niri/` - Niri window manager configuration
 - `.gitconfig` - Git configuration
 

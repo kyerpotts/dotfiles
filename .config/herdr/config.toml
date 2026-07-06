@@ -1,0 +1,27 @@
+[theme]
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+accent = "#37868b"
+panel_bg = "#050809"
+surface0 = "#1F1F28"
+surface1 = "#273036"
+surface_dim = "#151b1f"
+overlay0 = "#a2e8ff"
+overlay1 = "#f8fdff"
+text = "#f8fdff"
+subtext0 = "#cdf3ff"
+mauve = "#b2ecff"
+green = "#7dfa8a"
+yellow = "#fff672"
+red = "#ff72a1"
+blue = "#73cfed"
+teal = "#8fe0fa"
+peach = "#ff9fbf"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[ui.toast]
+delivery = "system"

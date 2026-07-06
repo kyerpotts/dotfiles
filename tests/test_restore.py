@@ -62,6 +62,18 @@ class RestoreScriptTest(unittest.TestCase):
             self.assertEqual(len(backups), 1)
             self.assertEqual(backups[0].read_text(), "old shell config\n")
 
+    def test_herdr_config_is_deployed(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            home = Path(temp_dir) / "home"
+            home.mkdir()
+            herdr_config = home / ".config" / "herdr" / "config.toml"
+
+            result = self.run_restore(home, "--no-shell")
+
+            self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+            self.assertTrue(herdr_config.is_symlink())
+            self.assertEqual(herdr_config.resolve(), REPO_ROOT / ".config" / "herdr" / "config.toml")
+
     def test_no_shell_skips_shell_configuration(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             home = Path(temp_dir) / "home"
