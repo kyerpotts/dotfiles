@@ -24,7 +24,7 @@ export PATH=/home/squidmilk/.opencode/bin:$PATH
 export PATH="/home/squidmilk/.bun/bin:$PATH"
 
 # Auto-activate Python virtual environments
-source ~/.zsh_venv_auto_activate
+# source ~/.zsh_venv_auto_activate
 
 # zoxide - smarter cd command
 eval "$(zoxide init zsh)"
@@ -56,3 +56,4 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
+eval "$(mise activate zsh)"

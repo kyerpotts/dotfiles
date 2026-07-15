@@ -6,8 +6,8 @@
     // Workspace 1: Browser (Left monitor DP-1)
     spawn-sh-at-startup "sleep 2 && zen-browser"
 
-    // Workspace 1: Terminal with tmux (Right monitor HDMI-A-2)
-    spawn-sh-at-startup "sleep 2 && ghostty --title=tmux -e tmux"
+    // Workspace 1: Terminal with herdr (Right monitor HDMI-A-2)
+    spawn-sh-at-startup "sleep 5 && ghostty --title=herdr -e /home/squidmilk/.local/bin/herdr"
 
     // Workspace 3: YouTube Music
     spawn-sh-at-startup "sleep 3 && youtube-music"
