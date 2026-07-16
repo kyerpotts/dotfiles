@@ -1,6 +1,6 @@
 {
   "RFC": {
-    "prefix": "rfc",
+    "prefix": "drfc",
     "description": "Create an engineering request for comments",
     "body": [
       "# RFC ${1:RFC-000}: ${2:Title}",
@@ -82,7 +82,7 @@
     ]
   },
   "PRD": {
-    "prefix": "prd",
+    "prefix": "dprd",
     "description": "Create a concise product requirements document",
     "body": [
       "# PRD ${1:PRD-000}: ${2:Title}",
@@ -152,7 +152,7 @@
     ]
   },
   "ADR": {
-    "prefix": "adr",
+    "prefix": "dadr",
     "description": "Create an architecture decision record",
     "body": [
       "# ADR ${1:ADR-000}: ${2:Title}",
@@ -202,7 +202,7 @@
     ]
   },
   "Technical Design": {
-    "prefix": "techspec",
+    "prefix": "dtechspec",
     "description": "Create an implementation-ready technical design document",
     "body": [
       "# Technical Design ${1:TD-000}: ${2:Title}",
@@ -286,7 +286,7 @@
     ]
   },
   "Architecture Overview": {
-    "prefix": "archoverview",
+    "prefix": "darchoverview",
     "description": "Create a living overview of the current system architecture",
     "body": [
       "# Architecture Overview ${1:ARCH-000}: ${2:System or Platform}",
@@ -347,7 +347,7 @@
     ]
   },
   "Data Contract": {
-    "prefix": "datacontract",
+    "prefix": "ddatacontract",
     "description": "Create a versioned contract for a data product, dataset, or stream",
     "body": [
       "# Data Contract ${1:DC-000}: ${2:Data Product or Interface}",
@@ -411,7 +411,7 @@
     ]
   },
   "Service Profile and Runbook": {
-    "prefix": "runbook",
+    "prefix": "drunbook",
     "description": "Create an operational profile and executable service runbook",
     "body": [
       "# Service Profile and Runbook ${1:RUN-000}: ${2:Service or Platform}",
@@ -475,7 +475,7 @@
     ]
   },
   "Blameless Postmortem": {
-    "prefix": "postmortem",
+    "prefix": "dpostmortem",
     "description": "Create a blameless, systems-focused incident review",
     "body": [
       "# Postmortem ${1:INC-000}: ${2:Incident Title}",
@@ -547,7 +547,7 @@
     ]
   },
   "Data Migration and Backfill Plan": {
-    "prefix": "datamigration",
+    "prefix": "ddatamigration",
     "description": "Create an executable plan for a high-risk data migration or backfill",
     "body": [
       "# Data Migration and Backfill Plan ${1:MIG-000}: ${2:Title}",
@@ -619,7 +619,7 @@
     ]
   },
   "Threat Model": {
-    "prefix": "threatmodel",
+    "prefix": "dthreatmodel",
     "description": "Create a scoped threat model with traceable controls and residual risk",
     "body": [
       "# Threat Model ${1:TM-000}: ${2:System or Change}",
@@ -680,7 +680,7 @@
     ]
   },
   "Technology Radar Entry": {
-    "prefix": "techradar",
+    "prefix": "dtechradar",
     "description": "Create an evidence-backed technology radar recommendation",
     "body": [
       "# Technology Radar ${1:TR-000}: ${2:Technology}",
@@ -735,7 +735,7 @@
     ]
   },
   "Discovery": {
-    "prefix": "discovery",
+    "prefix": "ddiscovery",
     "description": "Create a lightweight engineering discovery scratchpad",
     "body": [
       "# Discovery: ${1:Topic}",
