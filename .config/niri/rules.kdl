@@ -21,10 +21,10 @@
 
     // Terminal with tmux on main workspace, Right Monitor (HDMI-A-2), 2/3 width
     window-rule {
-        match app-id="com.mitchellh.ghostty" title="tmux" at-startup=true
+        match app-id="com.mitchellh.ghostty" title="herdr" at-startup=true
         open-on-workspace "tmux"
         open-on-output "HDMI-A-2"
-        default-column-width { proportion 0.66667; }
+        default-column-width { proportion 1.0; }
     }
 
     // Obsidian on notes workspace, 2/3 width
