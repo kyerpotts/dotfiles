@@ -9,8 +9,10 @@ return {
     -- Remove this later to test package-manager auto-detection.
     -- plugins = { all = true },
   },
-  config = function(_, opts)
-    require("vulkanite").setup(opts)
-    vim.cmd.colorscheme("vulkanite")
-  end,
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "vulkanite",
+    },
+  },
 }
