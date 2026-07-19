@@ -1,3 +1,8 @@
+onboarding = false
+
+[keys]
+last_pane = "prefix+space"
+
 [theme]
 name = "terminal"
 auto_switch = false
