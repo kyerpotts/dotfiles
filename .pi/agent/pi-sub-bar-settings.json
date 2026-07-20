@@ -1,0 +1,228 @@
+{
+  "version": 2,
+  "display": {
+    "alignment": "split",
+    "barStyle": "both",
+    "barType": "horizontal-bar",
+    "barWidth": 12,
+    "barCharacter": "heavy",
+    "containBar": false,
+    "brailleFillEmpty": true,
+    "brailleFullBlocks": true,
+    "colorScheme": "base-warning-error",
+    "usageColorTargets": {
+      "title": false,
+      "timer": true,
+      "bar": true,
+      "usageLabel": false,
+      "status": true
+    },
+    "resetTimePosition": "back",
+    "resetTimeFormat": "relative",
+    "resetTimeContainment": "()",
+    "statusIndicatorMode": "text",
+    "statusIconPack": "minimal",
+    "statusIconCustom": "✓⚠×?",
+    "statusProviderDivider": false,
+    "statusDismissOk": true,
+    "showProviderName": false,
+    "providerLabel": "subscription",
+    "providerLabelColon": true,
+    "providerLabelBold": false,
+    "baseTextColor": "primary",
+    "backgroundColor": "toolPendingBg",
+    "showWindowTitle": true,
+    "boldWindowTitle": false,
+    "showUsageLabels": true,
+    "dividerCharacter": "|",
+    "dividerColor": "success",
+    "dividerBlanks": 1,
+    "showProviderDivider": false,
+    "statusLeadingDivider": false,
+    "statusTrailingDivider": true,
+    "dividerFooterJoin": true,
+    "showTopDivider": true,
+    "showBottomDivider": true,
+    "paddingLeft": 4,
+    "paddingRight": 4,
+    "widgetPlacement": "belowEditor",
+    "showContextBar": false,
+    "errorThreshold": 40,
+    "warningThreshold": 60,
+    "overflow": "truncate",
+    "successThreshold": 80
+  },
+  "providers": {
+    "anthropic": {
+      "showStatus": true,
+      "windows": {
+        "show5h": true,
+        "show7d": true,
+        "showExtra": false
+      }
+    },
+    "copilot": {
+      "showStatus": true,
+      "showMultiplier": true,
+      "showRequestsLeft": true,
+      "quotaDisplay": "percentage",
+      "windows": {
+        "showMonth": true
+      }
+    },
+    "gemini": {
+      "showStatus": true,
+      "windows": {
+        "showPro": true,
+        "showFlash": true
+      }
+    },
+    "antigravity": {
+      "showStatus": true,
+      "showCurrentModel": true,
+      "showScopedModels": true,
+      "windows": {
+        "showModels": true
+      },
+      "modelVisibility": {},
+      "modelOrder": []
+    },
+    "codex": {
+      "showStatus": true,
+      "invertUsage": false,
+      "windows": {
+        "showPrimary": true,
+        "showSecondary": true
+      }
+    },
+    "kiro": {
+      "showStatus": false,
+      "windows": {
+        "showCredits": true
+      }
+    },
+    "zai": {
+      "showStatus": false,
+      "windows": {
+        "showTokens": true,
+        "showMonthly": true
+      }
+    }
+  },
+  "displayThemes": [
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "display": {
+        "alignment": "split",
+        "barStyle": "both",
+        "barType": "braille",
+        "barWidth": 12,
+        "barCharacter": "🚀_",
+        "containBar": false,
+        "brailleFillEmpty": true,
+        "brailleFullBlocks": true,
+        "colorScheme": "monochrome",
+        "usageColorTargets": {
+          "title": false,
+          "timer": true,
+          "bar": true,
+          "usageLabel": false,
+          "status": true
+        },
+        "resetTimePosition": "integrated",
+        "resetTimeFormat": "relative",
+        "resetTimeContainment": "none",
+        "statusIndicatorMode": "text",
+        "statusIconPack": "minimal",
+        "statusIconCustom": "✓⚠×?",
+        "statusProviderDivider": false,
+        "statusDismissOk": true,
+        "showProviderName": true,
+        "providerLabel": "subscription",
+        "providerLabelColon": true,
+        "providerLabelBold": false,
+        "baseTextColor": "warning",
+        "backgroundColor": "toolPendingBg",
+        "showWindowTitle": true,
+        "boldWindowTitle": false,
+        "showUsageLabels": true,
+        "dividerCharacter": "|",
+        "dividerColor": "success",
+        "dividerBlanks": 1,
+        "showProviderDivider": false,
+        "statusLeadingDivider": false,
+        "statusTrailingDivider": true,
+        "dividerFooterJoin": true,
+        "showTopDivider": true,
+        "showBottomDivider": true,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "widgetPlacement": "belowEditor",
+        "showContextBar": false,
+        "errorThreshold": 25,
+        "warningThreshold": 50,
+        "overflow": "truncate",
+        "successThreshold": 75
+      },
+      "source": "saved"
+    }
+  ],
+  "displayUserTheme": {
+    "alignment": "split",
+    "barStyle": "both",
+    "barType": "horizontal-bar",
+    "barWidth": "fill",
+    "barCharacter": "heavy",
+    "containBar": false,
+    "brailleFillEmpty": false,
+    "brailleFullBlocks": false,
+    "colorScheme": "base-warning-error",
+    "usageColorTargets": {
+      "title": true,
+      "timer": true,
+      "bar": true,
+      "usageLabel": true,
+      "status": true
+    },
+    "resetTimePosition": "front",
+    "resetTimeFormat": "relative",
+    "resetTimeContainment": "blank",
+    "statusIndicatorMode": "icon",
+    "statusIconPack": "emoji",
+    "statusIconCustom": "✓⚠×?",
+    "statusProviderDivider": false,
+    "statusDismissOk": true,
+    "showProviderName": true,
+    "providerLabel": "none",
+    "providerLabelColon": false,
+    "providerLabelBold": true,
+    "baseTextColor": "muted",
+    "backgroundColor": "none",
+    "showWindowTitle": true,
+    "boldWindowTitle": true,
+    "showUsageLabels": true,
+    "dividerCharacter": "│",
+    "dividerColor": "dim",
+    "dividerBlanks": 1,
+    "showProviderDivider": true,
+    "statusLeadingDivider": false,
+    "statusTrailingDivider": false,
+    "dividerFooterJoin": true,
+    "showTopDivider": false,
+    "showBottomDivider": true,
+    "paddingLeft": 1,
+    "paddingRight": 1,
+    "widgetPlacement": "belowEditor",
+    "showContextBar": false,
+    "errorThreshold": 25,
+    "warningThreshold": 50,
+    "overflow": "truncate",
+    "successThreshold": 75
+  },
+  "pinnedProvider": null,
+  "keybindings": {
+    "cycleProvider": "ctrl+alt+p",
+    "toggleResetFormat": "ctrl+alt+r"
+  }
+}

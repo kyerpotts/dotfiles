@@ -74,6 +74,24 @@ class RestoreScriptTest(unittest.TestCase):
             self.assertTrue(herdr_config.is_symlink())
             self.assertEqual(herdr_config.resolve(), REPO_ROOT / ".config" / "herdr" / "config.toml")
 
+    def test_pi_config_is_deployed(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            home = Path(temp_dir) / "home"
+            home.mkdir()
+
+            result = self.run_restore(home, "--no-shell")
+
+            self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+            for path in (
+                ".pi/agent/settings.json",
+                ".pi/agent/pi-sub-bar-settings.json",
+                ".pi/agent/skills",
+                ".pi/agent/extensions",
+            ):
+                target = home / path
+                self.assertTrue(target.is_symlink())
+                self.assertEqual(target.resolve(), REPO_ROOT / path)
+
     def test_no_shell_skips_shell_configuration(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             home = Path(temp_dir) / "home"

@@ -5,8 +5,24 @@ backup-*/
 # Sensitive files (add patterns for any files with secrets)
 .config/gh/hosts.yml
 .ssh/
+.env
+.env.*
+!.env.example
 *.key
 *.pem
+
+# Pi: track portable config only; ignore sessions, credentials, caches, and installs
+.pi/agent/*
+!.pi/agent/settings.json
+!.pi/agent/pi-sub-bar-settings.json
+!.pi/agent/extensions/
+!.pi/agent/extensions/**
+!.pi/agent/skills/
+!.pi/agent/skills/**
+.pi/agent/extensions/**/.env*
+.pi/agent/skills/**/.env*
+.pi/agent/extensions/**/node_modules/
+.pi/agent/skills/**/node_modules/
 
 # Cache and temporary files
 .cache/

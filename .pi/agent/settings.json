@@ -1,23 +1,35 @@
 {
-  "lastChangelogVersion": "0.74.0",
+  "lastChangelogVersion": "0.80.10",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.5",
-  "defaultThinkingLevel": "medium",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "high",
   "enabledModels": [
-    "openai-codex/gpt-5.4",
-    "openai-codex/gpt-5.4-mini",
-    "openai-codex/gpt-5.3-codex",
-    "openai-codex/gpt-5.5"
+    "openai-codex/gpt-5.5",
+    "openai-codex/gpt-5.6-luna",
+    "openai-codex/gpt-5.6-sol",
+    "openai-codex/gpt-5.6-terra"
   ],
-  "hideThinkingBlock": true,
+  "hideThinkingBlock": false,
+  "thinkingBudgets": {
+    "minimal": 128,
+    "low": 512,
+    "medium": 512,
+    "high": 4096,
+    "xhigh": 8192
+  },
   "packages": [
     "git:git@github.com:kyerpotts/pi-default-setup",
     "npm:pi-bash-live-view",
     "npm:pi-web-access",
-    "git:git@github.com:kyerpotts/pi-diff",
-    "git:git@github.com:kyerpotts/skills"
+    "git:git@github.com:kyerpotts/skills",
+    "npm:pi-show-diffs",
+    "npm:@marckrenn/pi-sub-core",
+    "npm:@marckrenn/pi-sub-status",
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:pi-llama-cpp"
   ],
   "theme": "dark",
   "enableInstallTelemetry": false,
-  "enableSkillCommands": true
+  "enableSkillCommands": true,
+  "transport": "auto"
 }

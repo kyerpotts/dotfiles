@@ -36,6 +36,7 @@ Personal configuration files for my CachyOS + Niri + Noctalia setup.
 - `.config/herdr/config.toml` - Herdr terminal workspace configuration
 - `.config/niri/` - Niri window manager configuration
 - `.gitconfig` - Git configuration
+- `.pi/agent/` - Pi settings, skills, and extensions (runtime state and credentials excluded)
 
 ## Updating Dotfiles
 

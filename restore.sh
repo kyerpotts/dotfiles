@@ -17,6 +17,10 @@ DOTFILES=(
     ".config/herdr/config.toml"
     ".config/obsidian"
     ".gitconfig"
+    ".pi/agent/settings.json"
+    ".pi/agent/pi-sub-bar-settings.json"
+    ".pi/agent/skills"
+    ".pi/agent/extensions"
 )
 
 usage() {
