@@ -1,6 +1,5 @@
 return {
   "kyerpotts/vulkanite.nvim",
-  branch = "vulkanite-mvp",
   name = "vulkanite.nvim",
   lazy = false,
   priority = 1000,
