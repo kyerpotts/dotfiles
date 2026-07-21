@@ -6,7 +6,9 @@ return {
         return function()
           local luasnip = require("luasnip")
           if luasnip.choice_active() then
-            luasnip.change_choice(direction)
+            vim.schedule(function()
+              luasnip.change_choice(direction)
+            end)
             return true
           end
         end

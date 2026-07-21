@@ -814,7 +814,7 @@
       "  - Validation: ${19:Evidence required and how it will be obtained}",
       "",
       "## 5. Technical Analysis",
-      "- ${20:ANA-001} [${21|Storage,I/O,CPU,Network,Memory,Concurrency,Parallelism,Nodes,Architecture,Technical debt,Side effects|}]: ${22:Concern or finding}",
+      "- ${20:ANA-001}: [${21|Storage,I/O,CPU,Network,Memory,Concurrency,Parallelism,Nodes,Architecture,Technical debt,Side effects|}]: ${22:Concern or finding}",
       "  - Analysis: ${23:How the concern relates to the current system and proposed change}",
       "  - Expected impact: ${24:How the proposed change is expected to affect this concern}",
       "  - Expected benefit: ${25|low,moderate,high|}",
