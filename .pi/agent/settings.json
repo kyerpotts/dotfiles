@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.82.1",
+  "lastChangelogVersion": "0.83.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-sol",
   "defaultThinkingLevel": "xhigh",
@@ -26,8 +26,7 @@
     "npm:@marckrenn/pi-sub-status",
     "git:github.com/DietrichGebert/ponytail",
     "npm:pi-llama-cpp",
-    "npm:pi-design-deck",
-    "npm:@ifi/pi-bash-live-view"
+    "npm:pi-design-deck"
   ],
   "theme": "dark",
   "enableInstallTelemetry": false,
