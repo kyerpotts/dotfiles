@@ -16,7 +16,6 @@ export BROWSER="zen-browser"
 export GOBIN="$HOME/.local/bin"
 export PATH="$GOBIN:$HOME/Scripts:$PATH"
 
-
 # opencode
 export PATH=/home/squidmilk/.opencode/bin:$PATH
 

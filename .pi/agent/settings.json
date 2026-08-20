@@ -1,8 +1,8 @@
 {
-  "lastChangelogVersion": "0.80.10",
+  "lastChangelogVersion": "0.83.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-sol",
-  "defaultThinkingLevel": "high",
+  "defaultThinkingLevel": "xhigh",
   "enabledModels": [
     "openai-codex/gpt-5.5",
     "openai-codex/gpt-5.6-luna",
@@ -19,14 +19,14 @@
   },
   "packages": [
     "git:git@github.com:kyerpotts/pi-default-setup",
-    "npm:pi-bash-live-view",
     "npm:pi-web-access",
     "git:git@github.com:kyerpotts/skills",
     "npm:pi-show-diffs",
     "npm:@marckrenn/pi-sub-core",
     "npm:@marckrenn/pi-sub-status",
     "git:github.com/DietrichGebert/ponytail",
-    "npm:pi-llama-cpp"
+    "npm:pi-llama-cpp",
+    "npm:pi-design-deck"
   ],
   "theme": "dark",
   "enableInstallTelemetry": false,
