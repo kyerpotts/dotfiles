@@ -3,6 +3,12 @@
         clip-to-geometry true
     }
 
+    window-rule {
+        match app-id="net-runelite-launcher-Launcher"
+        default-column-width { proportion 1.0; }
+        default-window-height { fixed 649; }
+    }
+
     // ────────────── Workspace & Monitor Assignments ──────────────
 
     // YouTube Music on music workspace

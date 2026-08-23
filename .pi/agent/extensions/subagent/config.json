@@ -1,0 +1,7 @@
+{
+  "asyncByDefault": false,
+  "globalConcurrencyLimit": 1,
+  "parallel": {
+    "concurrency": 1
+  }
+}

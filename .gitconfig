@@ -40,3 +40,5 @@
 	last = log -1 HEAD
 	visual = log --graph --oneline --all --decorate
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[includeIf "gitdir:/home/squidmilk/Scratch/shipthatcode/"]
+	path = /home/squidmilk/.gitconfig-coleoidal

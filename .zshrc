@@ -16,6 +16,9 @@ export BROWSER="zen-browser"
 export GOBIN="$HOME/.local/bin"
 export PATH="$GOBIN:$HOME/Scripts:$PATH"
 
+alias download-mp3='noglob /home/squidmilk/Scripts/download-mp3'
+alias download-video='noglob /home/squidmilk/Scripts/download-video'
+
 # opencode
 export PATH=/home/squidmilk/.opencode/bin:$PATH
 
@@ -56,3 +59,4 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 eval "$(mise activate zsh)"
+export PATH="/home/squidmilk/.cargo/bin/:$PATH"
