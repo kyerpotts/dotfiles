@@ -9,6 +9,7 @@ auto_switch = false
 
 [theme.custom]
 accent = "#37868b"
+active_row_bg = "#273036"
 panel_bg = "#050809"
 surface0 = "#1F1F28"
 surface1 = "#273036"
