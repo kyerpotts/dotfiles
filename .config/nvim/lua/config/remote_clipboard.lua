@@ -53,12 +53,16 @@ function M.setup()
   local has_wayland = vim.env.WAYLAND_DISPLAY ~= nil
     and vim.fn.executable("wl-copy") == 1
     and vim.fn.executable("wl-paste") == 1
-  local has_windows_clipboard = vim.env.WSL_DISTRO_NAME ~= nil
-    and vim.fn.executable("powershell.exe") == 1
+  local in_wsl = vim.env.WSL_DISTRO_NAME ~= nil
+  local has_windows_copy = in_wsl and vim.fn.executable("clip.exe") == 1
+  local has_windows_paste = in_wsl and vim.fn.executable("powershell.exe") == 1
 
   local function copy(register)
-    local emit = osc52.copy(register)
+    if has_windows_copy then
+      return { "clip.exe" }
+    end
 
+    local emit = osc52.copy(register)
     return function(lines)
       if has_wayland then
         local cmd = { "wl-copy", "--sensitive", "--type", "text/plain" }
@@ -87,7 +91,7 @@ function M.setup()
       end
     end
 
-    if has_windows_clipboard then
+    if has_windows_paste then
       return {
         "powershell.exe",
         "-NoLogo",
