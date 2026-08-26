@@ -53,6 +53,8 @@ function M.setup()
   local has_wayland = vim.env.WAYLAND_DISPLAY ~= nil
     and vim.fn.executable("wl-copy") == 1
     and vim.fn.executable("wl-paste") == 1
+  local has_windows_clipboard = vim.env.WSL_DISTRO_NAME ~= nil
+    and vim.fn.executable("powershell.exe") == 1
 
   local function copy(register)
     local emit = osc52.copy(register)
@@ -73,19 +75,29 @@ function M.setup()
   end
 
   local function paste(register)
-    if not has_wayland then
-      return osc52.paste(register)
-    end
+    if has_wayland then
+      return function()
+        local cmd = { "wl-paste", "--no-newline" }
+        if register == "*" then
+          cmd[#cmd + 1] = "--primary"
+        end
 
-    return function()
-      local cmd = { "wl-paste", "--no-newline" }
-      if register == "*" then
-        cmd[#cmd + 1] = "--primary"
+        local lines = vim.fn.systemlist(cmd, "", 1)
+        return vim.v.shell_error == 0 and lines or {}
       end
-
-      local lines = vim.fn.systemlist(cmd, "", 1)
-      return vim.v.shell_error == 0 and lines or {}
     end
+
+    if has_windows_clipboard then
+      return {
+        "powershell.exe",
+        "-NoLogo",
+        "-NoProfile",
+        "-Command",
+        [=[ [Console]::Out.Write($(Get-Clipboard -Raw).ToString().Replace("`r", "")) ]=],
+      }
+    end
+
+    return osc52.paste(register)
   end
 
   vim.g.clipboard = {
