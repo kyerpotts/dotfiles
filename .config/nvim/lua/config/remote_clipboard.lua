@@ -54,11 +54,14 @@ function M.setup()
     and vim.fn.executable("wl-copy") == 1
     and vim.fn.executable("wl-paste") == 1
   local in_wsl = vim.env.WSL_DISTRO_NAME ~= nil
+  local has_win32yank = in_wsl and vim.fn.executable("win32yank.exe") == 1
   local has_windows_copy = in_wsl and vim.fn.executable("clip.exe") == 1
   local has_windows_paste = in_wsl and vim.fn.executable("powershell.exe") == 1
 
   local function copy(register)
-    if has_windows_copy then
+    if has_win32yank then
+      return { "win32yank.exe", "-i", "--crlf" }
+    elseif has_windows_copy then
       return { "clip.exe" }
     end
 
@@ -91,7 +94,9 @@ function M.setup()
       end
     end
 
-    if has_windows_paste then
+    if has_win32yank then
+      return { "win32yank.exe", "-o", "--lf" }
+    elseif has_windows_paste then
       return {
         "powershell.exe",
         "-NoLogo",
