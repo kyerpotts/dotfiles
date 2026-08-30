@@ -23,6 +23,8 @@ backup-*/
 .pi/agent/skills/**/.env*
 .pi/agent/extensions/**/node_modules/
 .pi/agent/skills/**/node_modules/
+.agents/skills/**/.env*
+.agents/skills/**/node_modules/
 
 # Cache and temporary files
 .cache/

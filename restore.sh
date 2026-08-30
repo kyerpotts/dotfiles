@@ -17,6 +17,8 @@ DOTFILES=(
     ".config/herdr/config.toml"
     ".config/obsidian"
     ".gitconfig"
+    ".agents/.skill-lock.json"
+    ".agents/skills"
     ".pi/agent/settings.json"
     ".pi/agent/pi-sub-bar-settings.json"
     ".pi/agent/skills"

@@ -92,6 +92,20 @@ class RestoreScriptTest(unittest.TestCase):
                 self.assertTrue(target.is_symlink())
                 self.assertEqual(target.resolve(), REPO_ROOT / path)
 
+    def test_agent_skills_are_deployed_from_tracked_source(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            home = Path(temp_dir) / "home"
+            home.mkdir()
+
+            result = self.run_restore(home, "--no-shell")
+
+            self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+            for path in (".agents/.skill-lock.json", ".agents/skills"):
+                target = home / path
+                self.assertTrue(target.is_symlink())
+                self.assertEqual(target.resolve(), REPO_ROOT / path)
+            self.assertTrue((home / ".agents/skills/job-management/SKILL.md").is_file())
+
     def test_no_shell_skips_shell_configuration(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             home = Path(temp_dir) / "home"

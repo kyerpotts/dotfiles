@@ -36,7 +36,9 @@ Personal configuration files for my CachyOS + Niri + Noctalia setup.
 - `.config/herdr/config.toml` - Herdr terminal workspace configuration
 - `.config/niri/` - Niri window manager configuration
 - `.gitconfig` - Git configuration
-- `.pi/agent/` - Pi settings, skills, and extensions (runtime state and credentials excluded)
+- `.agents/skills/` - Physical copies of custom and installed agent skills
+- `.agents/.skill-lock.json` - Skill source and version metadata
+- `.pi/agent/` - Pi settings, skill links, and extensions (runtime state and credentials excluded)
 
 ## Updating Dotfiles
 
@@ -56,5 +58,6 @@ See the `setup/` directory in the main repository for automated system setup scr
 ## Notes
 
 - Files are symlinked from `~/.dotfiles` to your home directory
+- `~/.agents/skills` points to the physical, Git-tracked skills in `~/.dotfiles/.agents/skills`
 - Existing files are backed up before being replaced
 - The restore script handles shell switching to zsh automatically
