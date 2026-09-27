@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "defaultMode": "plan"
+  },
+  "enabledPlugins": {
+    "mattpocock-skills@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "claude-hud@claude-hud": true,
+    "agent-skills@kyerpotts": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
+      }
+    },
+    "kyerpotts": {
+      "source": {
+        "source": "git",
+        "url": "git@github.com:kyerpotts/agent-skills.git"
+      }
+    }
+  },
+  "theme": "custom:vulkanite",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/home/squidmilk/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

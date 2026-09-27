@@ -23,6 +23,10 @@ DOTFILES=(
     ".pi/agent/pi-sub-bar-settings.json"
     ".pi/agent/skills"
     ".pi/agent/extensions"
+    ".claude/CLAUDE.md"
+    ".claude/settings.json"
+    ".claude/themes"
+    ".claude/hooks"
 )
 
 usage() {
