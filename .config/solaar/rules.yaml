@@ -1,0 +1,33 @@
+%YAML 1.3
+---
+- MouseGesture: [Haptic]
+- KeyPress: XF86_Tools
+...
+---
+- MouseGesture: [Haptic, Mouse Up]
+- KeyPress: [Super_L, u]
+...
+---
+- MouseGesture: [Haptic, Mouse Down]
+- KeyPress: [Super_L, d]
+...
+---
+- MouseGesture: [Haptic, Mouse Left]
+- KeyPress: [Super_L, Left]
+...
+---
+- MouseGesture: [Haptic, Mouse Right]
+- KeyPress: [Super_L, Right]
+...
+---
+- MouseGesture: [Mouse Gesture Button]
+- KeyPress: XF86_Launch5
+...
+---
+- MouseGesture: [Mouse Gesture Button, Mouse Up]
+- KeyPress: [Super_L, f]
+...
+---
+- MouseGesture: [Mouse Gesture Button, Mouse Down]
+- KeyPress: F1
+...

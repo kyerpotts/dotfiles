@@ -15,6 +15,7 @@ DOTFILES=(
     ".tmux.conf"
     ".config/niri"
     ".config/herdr/config.toml"
+    ".config/solaar/rules.yaml"
     ".config/obsidian"
     ".gitconfig"
     ".agents/.skill-lock.json"
@@ -196,3 +197,17 @@ echo "========================================"
 echo ""
 echo "Files are symlinked, so changes in \$HOME will reflect in the dotfiles repo."
 echo "Run 'source ~/.zshrc' to reload shell configuration."
+
+# Solaar keeps key diversion in its own config.yaml, not rules.yaml, so the
+# gesture rules do nothing until both thumb controls are diverted.
+if command -v solaar &>/dev/null; then
+    for key in "Mouse Gesture Button" "Haptic"; do
+        if [[ "$DRY_RUN" == true ]]; then
+            echo "Would set Solaar divert-keys: $key -> Mouse Gestures"
+        elif solaar config "MX Master 4" divert-keys "$key" "Mouse Gestures" &>/dev/null; then
+            echo "✓ Solaar divert-keys: $key -> Mouse Gestures"
+        else
+            echo "⊘ Could not set Solaar divert-keys for $key (is the MX Master 4 connected?)"
+        fi
+    done
+fi

@@ -264,6 +264,12 @@ recent-windows {
     }
 }
 
+// MX Master 4 thumb controls, emitted by Solaar (~/.config/solaar/rules.yaml)
+binds {
+    XF86Tools hotkey-overlay-title="Overview (mouse haptic pad)" { toggle-overview; }
+    XF86Launch5 hotkey-overlay-title="Launcher (mouse gesture button)" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+}
+
 // Include dms files
 include "dms/colors.kdl"
 include "dms/layout.kdl"

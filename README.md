@@ -35,6 +35,7 @@ Personal configuration files for my CachyOS + Niri + Noctalia setup.
 - `.config/tmux/` - Tmux configuration
 - `.config/herdr/config.toml` - Herdr terminal workspace configuration
 - `.config/niri/` - Niri window manager configuration
+- `.config/solaar/rules.yaml` - Solaar mouse button and gesture rules (MX Master 4)
 - `.gitconfig` - Git configuration
 - `.agents/skills/` - Physical copies of custom and installed agent skills
 - `.agents/.skill-lock.json` - Skill source and version metadata

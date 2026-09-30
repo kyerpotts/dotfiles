@@ -14,6 +14,13 @@ class RestoreScriptTest(unittest.TestCase):
         env = os.environ.copy()
         env["HOME"] = str(home)
         env["SHELL"] = "/bin/zsh"
+        # Stub solaar so restore never reconfigures the real mouse during tests.
+        bin_dir = home.parent / "bin"
+        bin_dir.mkdir(exist_ok=True)
+        stub = bin_dir / "solaar"
+        stub.write_text("#!/bin/sh\nexit 0\n")
+        stub.chmod(0o755)
+        env["PATH"] = f"{bin_dir}{os.pathsep}{env['PATH']}"
         return subprocess.run(
             ["bash", str(RESTORE), *args],
             cwd=REPO_ROOT,
@@ -73,6 +80,18 @@ class RestoreScriptTest(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
             self.assertTrue(herdr_config.is_symlink())
             self.assertEqual(herdr_config.resolve(), REPO_ROOT / ".config" / "herdr" / "config.toml")
+
+    def test_solaar_rules_are_deployed(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            home = Path(temp_dir) / "home"
+            home.mkdir()
+            solaar_rules = home / ".config" / "solaar" / "rules.yaml"
+
+            result = self.run_restore(home, "--no-shell")
+
+            self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+            self.assertTrue(solaar_rules.is_symlink())
+            self.assertEqual(solaar_rules.resolve(), REPO_ROOT / ".config" / "solaar" / "rules.yaml")
 
     def test_pi_config_is_deployed(self):
         with tempfile.TemporaryDirectory() as temp_dir:

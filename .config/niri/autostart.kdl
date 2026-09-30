@@ -17,3 +17,6 @@
 
     // Workspace 5: Discordo
     spawn-sh-at-startup "sleep 5 && vesktop"
+
+    // Mouse button/gesture rules (~/.config/solaar/rules.yaml)
+    spawn-at-startup "solaar" "--window=hide"
